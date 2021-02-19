@@ -8,7 +8,11 @@
 <body>
    <div class="nav-bar"></div>
    <div id="app">
-       <product :premium="premium"></product>
+       <div class="cart">
+           <p>Cart({{ cart }})</p>
+       </div>
+
+       <product :premium="premium" @add-to-cart="updateCart"></product>
    </div>
 
    <script src="http://unpkg.com/vue"></script>
