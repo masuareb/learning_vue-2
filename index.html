@@ -12,7 +12,7 @@
            <p>Cart({{ cart.length }})</p>
        </div>
 
-       <product :premium="premium" @add-to-cart="updateCart"></product>
+       <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeCart"></product>
    </div>
 
    <script src="http://unpkg.com/vue"></script>
